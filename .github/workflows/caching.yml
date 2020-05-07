@@ -4,7 +4,7 @@ on:
 jobs:
 
     fixer-with-cache:
-        name: PHPStan
+        name: PHP-CS-Fixer cache test
         runs-on: ubuntu-latest
 
         steps:
@@ -18,7 +18,7 @@ jobs:
                     php-version: 7.1
 
             -   name: Install Dependencies
-                run: composer install friendsofphp/php-cs-fixer
+                run: composer require friendsofphp/php-cs-fixer
 
             -   name: run
                 run: time vendor/bin/php-cs-fixer fix --diff --dry-run
