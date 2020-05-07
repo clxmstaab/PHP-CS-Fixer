@@ -4,7 +4,7 @@ on:
 jobs:
 
     fixer-without-cache:
-        name: PHP-CS-Fixer cache test
+        name: PHP-CS-Fixer without cache test
         runs-on: ubuntu-latest
 
         steps:
@@ -28,7 +28,7 @@ jobs:
 
 
     fixer-with-cache:
-        name: PHP-CS-Fixer cache test
+        name: PHP-CS-Fixer with cache test
         runs-on: ubuntu-latest
 
         steps:
@@ -44,12 +44,11 @@ jobs:
             -   name: Install Dependencies
                 run: composer require friendsofphp/php-cs-fixer
 
-            -   name: Cache Primes
-                id: cache-primes
+            -   name: Cache
                 uses: actions/cache@v1
                 with:
-                    path: .php_cs.cache
-                    key: ${{ runner.os }}-primes
+                    path: /tmp/.php_cs.cache
+                    key: ${{ runner.os }}
 
             -   name: run
                 run: time vendor/bin/php-cs-fixer fix --diff --dry-run --cache-file /tmp/.php_cs.cache
