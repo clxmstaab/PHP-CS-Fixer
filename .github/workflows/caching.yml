@@ -47,7 +47,7 @@ jobs:
             -   name: Cache
                 uses: actions/cache@v1
                 with:
-                    path: /tmp
+                    path: /tmp # can only cache on a directory path
                     key: ${{ runner.os }}
 
             -   name: run
