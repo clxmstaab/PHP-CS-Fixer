@@ -51,7 +51,6 @@ jobs:
                 with:
                     path: /tmp/php-cs/ # can only cache on a directory path
                     key: ${{ runner.os }}-fixer-2
-                    restore-keys: ${{ runner.os }}-fixer-2
 
             -   name: run
                 run: time vendor/bin/php-cs-fixer fix --diff --dry-run --cache-file /tmp/php-cs/.php_cs.cache
