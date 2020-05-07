@@ -13,9 +13,9 @@ jobs:
                     repository: redaxo/redaxo # just check out any code
 
             -   name: Setup PHP
-                    uses: shivammathur/setup-php@v2
-                    with:
-                        php-version: 7.1
+                uses: shivammathur/setup-php@v2
+                with:
+                    php-version: 7.1
 
             -   name: Install Dependencies
                 run: composer install friendsofphp/php-cs-fixer
