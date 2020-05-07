@@ -25,3 +25,4 @@ jobs:
 
             -   name: repeated run
                 run: time vendor/bin/php-cs-fixer fix --diff --dry-run
+
