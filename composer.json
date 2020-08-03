@@ -80,7 +80,7 @@
     "bin": [
         "php-cs-fixer"
     ],
-    "scripts: {
+    "scripts": {
         "csfix": [
             "php-cs-fixer fix"
         ]
