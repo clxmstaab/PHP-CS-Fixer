@@ -10,7 +10,8 @@ jobs:
         steps:
             -   uses: actions/checkout@v2
                 with:
-                    repository: redaxo/redaxo # just check out any code
+                    repository: clxmstaab/redaxo # just check out any code
+                    ref: 'test-cs-fixer'
 
             -   name: Setup PHP
                 uses: shivammathur/setup-php@v2
@@ -34,7 +35,8 @@ jobs:
         steps:
             -   uses: actions/checkout@v2
                 with:
-                    repository: redaxo/redaxo # just check out any code
+                    repository: clxmstaab/redaxo # just check out any code
+                    ref: 'test-cs-fixer'
 
             -   name: Setup PHP
                 uses: shivammathur/setup-php@v2
