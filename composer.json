@@ -79,5 +79,10 @@
     },
     "bin": [
         "php-cs-fixer"
-    ]
+    ],
+    "scripts: {
+        "csfix": [
+            "php-cs-fixer fix"
+        ]
+    }
 }
