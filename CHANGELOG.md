@@ -1,6 +1,6 @@
 CHANGELOG for PHP CS Fixer
 
-re-trigger3
+re-trigger4
 
 
 ==========================
