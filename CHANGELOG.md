@@ -1,4 +1,8 @@
 CHANGELOG for PHP CS Fixer
+
+re-trigger
+
+
 ==========================
 
 This file contains changelogs for stable releases only.
