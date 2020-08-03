@@ -3,6 +3,8 @@ UPGRADE GUIDE FROM 1.x to 2.0
 
 This is guide for upgrade from version 1.x to 2.0 for using the CLI tool.
 
+test
+
 Rules and sets
 --------------
 To configure which fixers should be used you must now set rules and sets instead of fixers and level. This affects both configuration file and CLI arguments.
