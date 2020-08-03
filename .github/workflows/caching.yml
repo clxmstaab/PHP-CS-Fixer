@@ -55,9 +55,9 @@ jobs:
                     key: ${{ runner.os }}-fixer-2
 
             -   name: run
-                run: time composer csfix -- --diff --dry-run --cache-file /tmp/php-cs/.php_cs.cache
+                run: time composer csfix --diff --dry-run --cache-file /tmp/php-cs/.php_cs.cache
 
             -   name: repeated run
-                run: time composer csfix -- --diff --dry-run --cache-file /tmp/php-cs/.php_cs.cache
+                run: time composer csfix --diff --dry-run --cache-file /tmp/php-cs/.php_cs.cache
 
 
